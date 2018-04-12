@@ -12,6 +12,7 @@
 		73F47FAB207F132300A1BB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FA9207F132300A1BB42 /* Main.storyboard */; };
 		73F47FAD207F132300A1BB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FAC207F132300A1BB42 /* Assets.xcassets */; };
 		73F47FB0207F132300A1BB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FAE207F132300A1BB42 /* LaunchScreen.storyboard */; };
+		73F47FB8207F141400A1BB42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FB7207F141400A1BB42 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		73F47FAC207F132300A1BB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73F47FAF207F132300A1BB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73F47FB1207F132300A1BB42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F47FB7207F141400A1BB42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				73F47FAC207F132300A1BB42 /* Assets.xcassets */,
 				73F47FAE207F132300A1BB42 /* LaunchScreen.storyboard */,
 				73F47FB1207F132300A1BB42 /* Info.plist */,
+				73F47FB7207F141400A1BB42 /* GoogleService-Info.plist */,
 			);
 			path = Texpert;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 				73F47FB0207F132300A1BB42 /* LaunchScreen.storyboard in Resources */,
 				73F47FAD207F132300A1BB42 /* Assets.xcassets in Resources */,
 				73F47FAB207F132300A1BB42 /* Main.storyboard in Resources */,
+				73F47FB8207F141400A1BB42 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
