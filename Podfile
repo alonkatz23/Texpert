@@ -15,6 +15,8 @@ pod 'Firebase/Database'
 pod 'SVProgressHUD'
 pod 'ChameleonFramework'
 pod 'GradientLoadingBar', '~> 1.0'
+pod 'IQKeyboardManagerSwift'
+
 
 
 end

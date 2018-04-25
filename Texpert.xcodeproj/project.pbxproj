@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		336E1D345B876666C472B82E /* Pods_Texpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683FDC4DC179DE1461B93223 /* Pods_Texpert.framework */; };
+		730068CD2087FFAA004857D2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730068CC2087FFAA004857D2 /* SignInViewController.swift */; };
+		730068CF20884D52004857D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730068CE20884D52004857D2 /* SignUpViewController.swift */; };
 		73F47FA6207F132300A1BB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47FA5207F132300A1BB42 /* AppDelegate.swift */; };
-		73F47FA8207F132300A1BB42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47FA7207F132300A1BB42 /* ViewController.swift */; };
+		73F47FA8207F132300A1BB42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47FA7207F132300A1BB42 /* LoginViewController.swift */; };
 		73F47FAB207F132300A1BB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FA9207F132300A1BB42 /* Main.storyboard */; };
 		73F47FAD207F132300A1BB42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FAC207F132300A1BB42 /* Assets.xcassets */; };
 		73F47FB0207F132300A1BB42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FAE207F132300A1BB42 /* LaunchScreen.storyboard */; };
@@ -19,9 +21,11 @@
 /* Begin PBXFileReference section */
 		04F635F7FEBFB813E82C6765 /* Pods-Texpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Texpert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Texpert/Pods-Texpert.debug.xcconfig"; sourceTree = "<group>"; };
 		683FDC4DC179DE1461B93223 /* Pods_Texpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		730068CC2087FFAA004857D2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		730068CE20884D52004857D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		73F47FA2207F132300A1BB42 /* Texpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F47FA5207F132300A1BB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73F47FA7207F132300A1BB42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73F47FA7207F132300A1BB42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		73F47FAA207F132300A1BB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73F47FAC207F132300A1BB42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73F47FAF207F132300A1BB42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,7 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				73F47FA5207F132300A1BB42 /* AppDelegate.swift */,
-				73F47FA7207F132300A1BB42 /* ViewController.swift */,
+				73F47FA7207F132300A1BB42 /* LoginViewController.swift */,
+				730068CC2087FFAA004857D2 /* SignInViewController.swift */,
+				730068CE20884D52004857D2 /* SignUpViewController.swift */,
 				73F47FA9207F132300A1BB42 /* Main.storyboard */,
 				73F47FAC207F132300A1BB42 /* Assets.xcassets */,
 				73F47FAE207F132300A1BB42 /* LaunchScreen.storyboard */,
@@ -207,6 +213,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GradientLoadingBar/GradientLoadingBar.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -217,6 +224,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientLoadingBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -233,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73F47FA8207F132300A1BB42 /* ViewController.swift in Sources */,
+				73F47FA8207F132300A1BB42 /* LoginViewController.swift in Sources */,
 				73F47FA6207F132300A1BB42 /* AppDelegate.swift in Sources */,
+				730068CF20884D52004857D2 /* SignUpViewController.swift in Sources */,
+				730068CD2087FFAA004857D2 /* SignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
