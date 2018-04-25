@@ -99,9 +99,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         let reference = Database.database().reference()
         let modifiedEmail = email.replacingOccurrences(of: ".", with: ";")
         
-        reference.child("unverifiedUsers").observeSingleEvent(of: .value) { (snapshot) in
+        reference.child(UNVERIFIEDUSERS).observeSingleEvent(of: .value) { (snapshot) in
             
-            if snapshot.hasChild(modifiedEmail){
+            if snapshot.hasChild(modifiedEmail.lowercased()){
                 Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                     
                     if let errors = error{
@@ -140,6 +140,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                     let alert = UIAlertController(title: "Registration Successful", message: "Please verify the email we have sent to \(email)", preferredStyle: UIAlertControllerStyle.alert)
                     
                     alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: { (action) in
+                        self.clearTextfields()
                         self.navigationController?.popViewController(animated: true)
                         alert.dismiss(animated: true, completion: nil)
                     }))
@@ -161,10 +162,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 self.present(alert, animated: true, completion: nil)
             }
         }
-        
-       // SVProgressHUD.dismiss()
-        
-        
+    }
+    
+    func clearTextfields(){
+        passwordTextField.text = ""
+        emailTextField.text = ""
+        confirmPasswordTextField.text = ""
     }
     
     fileprivate func registerUserIntoDatabaseWithUID(_ uid: String, values: [String: AnyObject]) {
@@ -199,7 +202,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     func fetchUnverifiedUser(){
           print("fetched1")
-        Database.database().reference().child("unverifiedUsers").observe(.childAdded, with: { (snapshot) in
+        Database.database().reference().child(UNVERIFIEDUSERS).observe(.childAdded, with: { (snapshot) in
             print("fetched")
             print(snapshot)
 

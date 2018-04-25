@@ -10,6 +10,7 @@
 		336E1D345B876666C472B82E /* Pods_Texpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 683FDC4DC179DE1461B93223 /* Pods_Texpert.framework */; };
 		730068CD2087FFAA004857D2 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730068CC2087FFAA004857D2 /* SignInViewController.swift */; };
 		730068CF20884D52004857D2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730068CE20884D52004857D2 /* SignUpViewController.swift */; };
+		7345DB4E2090325B009F07EA /* AuthorizeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7345DB4D2090325B009F07EA /* AuthorizeEmailViewController.swift */; };
 		73F47FA6207F132300A1BB42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47FA5207F132300A1BB42 /* AppDelegate.swift */; };
 		73F47FA8207F132300A1BB42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F47FA7207F132300A1BB42 /* LoginViewController.swift */; };
 		73F47FAB207F132300A1BB42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F47FA9207F132300A1BB42 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		683FDC4DC179DE1461B93223 /* Pods_Texpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Texpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		730068CC2087FFAA004857D2 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		730068CE20884D52004857D2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7345DB4D2090325B009F07EA /* AuthorizeEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeEmailViewController.swift; sourceTree = "<group>"; };
 		73F47FA2207F132300A1BB42 /* Texpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Texpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F47FA5207F132300A1BB42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F47FA7207F132300A1BB42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				73F47FA7207F132300A1BB42 /* LoginViewController.swift */,
 				730068CC2087FFAA004857D2 /* SignInViewController.swift */,
 				730068CE20884D52004857D2 /* SignUpViewController.swift */,
+				7345DB4D2090325B009F07EA /* AuthorizeEmailViewController.swift */,
 				73F47FA9207F132300A1BB42 /* Main.storyboard */,
 				73F47FAC207F132300A1BB42 /* Assets.xcassets */,
 				73F47FAE207F132300A1BB42 /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7345DB4E2090325B009F07EA /* AuthorizeEmailViewController.swift in Sources */,
 				73F47FA8207F132300A1BB42 /* LoginViewController.swift in Sources */,
 				73F47FA6207F132300A1BB42 /* AppDelegate.swift in Sources */,
 				730068CF20884D52004857D2 /* SignUpViewController.swift in Sources */,

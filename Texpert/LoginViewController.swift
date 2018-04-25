@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
       
-        if let user = Auth.auth().currentUser {
+        if Auth.auth().currentUser != nil {
            
 //            print(user.email)
 //            print(user.isEmailVerified)

@@ -93,27 +93,30 @@ class SignInViewController: UIViewController, UITextFieldDelegate{
         //When entering this stage, the user is logged in but not yet verified
         
         let reference = Database.database().reference()
-        if let email1 = user.email?.replacingOccurrences(of: ".", with: ";"){
+        if let modifiedEmail = user.email?.replacingOccurrences(of: ".", with: ";"){
             
-            reference.child("unverifiedUsers").observeSingleEvent(of: .value) { (snapshot) in
+            reference.child(UNVERIFIEDUSERS).observeSingleEvent(of: .value) { (snapshot) in
                 
                 print("The snapshot is \(snapshot)")
                 
                 
                 if(user.isEmailVerified){
                     //Account is in Database and is verified
-                    reference.child("unverifiedUsers").child(email1).removeValue()
+                    reference.child(UNVERIFIEDUSERS).child(modifiedEmail).removeValue()
                     
                     SVProgressHUD.dismiss()
                     
                     if user.uid == "0UeKUDPTfcdoLoEhXkFLCippjBi1"{
                         //This is the admin login
-                        print("admin Login")
-                    } else {
-                        //This is the normal user login
-                        
                         self.emailTextField.text = ""
                         self.passwordTextField.text = ""
+                        print("admin Login")
+                        self.handleSegues(segue: "adminLogin")
+                    } else {
+                        //This is the normal user login
+                        self.emailTextField.text = ""
+                        self.passwordTextField.text = ""
+                       
                     }
                     
                 } else {
@@ -139,6 +142,10 @@ class SignInViewController: UIViewController, UITextFieldDelegate{
                 }
             }
         }
+    }
+    
+    func handleSegues(segue: String){
+        performSegue(withIdentifier: segue, sender: self)
     }
     
     func handleLogin(){
